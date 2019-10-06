@@ -1,6 +1,7 @@
 # One Neuron Drawn with Maya Modeler as Object and loaded with vue-babylonjs
 
-![N|Solid](https://raw.githubusercontent.com/jthoth/neuronzoo/master/public/neuron.jpg)
+![N|Solid](https://static.thenounproject.com/png/1503825-200.png)
+
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
