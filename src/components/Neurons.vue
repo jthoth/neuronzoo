@@ -22,13 +22,14 @@
                   <label class="overline">Size Output {{size_output}}</label>
                   <v-slider v-model="size_output" :max="5" :min="0" :step="0.25"></v-slider>
                 </v-col>
+                <label class="overline"> <v-icon>mdi-settings</v-icon> Scroll to zoop up or down and Mouse Control </label>
+
               </v-card>
             </v-col>
             <v-col cols="8" md="9">
               <v-card class="pa-2" raised tile>
                 <Scene>
                   <Property name="clearColor" color="#FFF"></Property>
-                  <!-- <Camera type="arcRotate"></Camera> -->
                   <HemisphericLight></HemisphericLight>
                   <Asset :src="generation.src" :position="[0, 0, 0]" :rotation="[0, 1.5, -2.1]"> </Asset>
                   <Sphere :scaling="[size_body, size_body, size_body]">
@@ -80,19 +81,19 @@ export default{
   name:'Waves',
   data() {
     let generations = [
-      {name:'Firsth', value:{src:'/v1.obj', neurons:[[-4.6, -.3, 0],
+      {name:'Firsth', value:{src:`${process.env.BASE_URL}v1.obj`, neurons:[[-4.6, -.3, 0],
       [-4.5, .4, -.55]], output:[4, .05, .38]}},
-      {name:'Second', value:{src:'/v2.obj', neurons:[[-4.9, -.3, -.1],
+      {name:'Second', value:{src:`${process.env.BASE_URL}v2.obj`, neurons:[[-4.9, -.3, -.1],
       [-5, -.7, .1], [-4.8, 0.15, -.4], [-4.75, .48, -.55]],
       output:[4.0, 1.1, -.3]}},
-      {name:'Third', value:{src:'/v3.obj',  neurons:[
+      {name:'Third', value:{src:`${process.env.BASE_URL}v3.obj`,  neurons:[
       [-3.8, .2, -.35], [-3.89, 1.0, 1.2],
       [-3.6, 2.7, -.15], [-4.4, -2.0, -.45], [-3.4, -1.0, 2.5],
       [-4, -.6, -1.4], [-3.93, 1.0, -2.5]], output:[4.4, .45, .48]}},
     ];
 
     return {
-      size_input:0.50,
+      size_input:0.35,
       size_body:1.0,
       size_output:0.50,
       generations : generations,
