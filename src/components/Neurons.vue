@@ -37,9 +37,7 @@
                         <Uniform variable="num_octaves" :float="generation.neurons.length"></Uniform>
                       </Shader>
                   </Sphere>
-                  <Box v-for="neuron in generation.neurons" :position="neuron"
-                  :scaling="[size_input, size_input, size_input]"
-                  :rotation="[0, 1.5, -2.1]">
+                  <Box v-for="neuron in generation.neurons" :position="neuron" :scaling="[size_input, size_input, size_input]" :key="neuron">
                     <Shader name="inline" :vertexShader="vertexShader" :fragmentShader="inputfragmentShader">
                         <Uniform variable="num_octaves" :float="generation.neurons.length"></Uniform>
                     </Shader>
