@@ -18,7 +18,7 @@ The purpose of this project was build a shader which simulate an ocean movements
 * [Node]- JavaScript run-time environment that executes JavaScript code outside of a browser
 * [Languaje]- Javascript Es6
 * [Web Framwork]- Vuejs
-* [Graphs]- vue-js
+* [Graphs]- vue-babylonjs
 * [Glsl]- GLSL
 
 ### Installation
