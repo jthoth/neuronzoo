@@ -8,7 +8,7 @@
 This project is a homework, it is part of CC7515  (GPU COMPUTING).
 # Description
 
-The purpose of this project was build a shader which simulate an ocean movements. However,  I partly did it, because I divert it a little bit because I use the value of each pixel computed by the shader to compute functions activations of the artificial neural networks and update the shader with those results. I also considered the generations of Neural networks to compute the outputs. The models of neurons was built with Maya-Autocad and was exported as an Object. Each shape in the camera was filled with the shader, with some modifications for each stage (input, cellbody, outpu)
+The purpose of this project was build a shader which simulate an ocean movements. However,  I partly did it, because I divert it a little bit because I used the value of each pixel computed by the shader to compute functions activations of the artificial neural networks and update the shader with those results. I also considered the generations of Neural networks to compute the outputs. The models of neurons was built with Maya-Autocad and was exported as an Object. Each shape in the camera was filled with the shader, with some modifications for each stage (input, cellbody, outpu)
 
 **Note**: The code of the shaders are in this path -> **/src/assets/*.glsl**.
 
