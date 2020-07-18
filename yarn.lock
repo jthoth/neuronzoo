@@ -669,6 +669,22 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@babylonjs/core@4.1.0", "@babylonjs/core@^4.0.3":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@babylonjs/core/-/core-4.1.0.tgz#63e390862debf81f8cf248496187029c42ea5eda"
+  integrity sha512-4pEKPEu14qRdqH5qatfmns/iHFHmujDI22SXkHIlJhTT0WgJH4I8IN1fPw9sU6jSCH2ul76Lpbi2zREvfrEDQA==
+  dependencies:
+    tslib "^1.10.0"
+
+"@babylonjs/loaders@^4.0.3":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@babylonjs/loaders/-/loaders-4.1.0.tgz#1b40f8c07b46228ae4cf6dbda2d0856293f4db80"
+  integrity sha512-stK/QygoNhdrJ9q8yNyZ7iE8Eu+dpwBviSoEigLX5IwHFJUmyxeI0LIZpjRAP2GRB96kqLrBsIBdWEwk076w/g==
+  dependencies:
+    "@babylonjs/core" "4.1.0"
+    babylonjs-gltf2interface "4.1.0"
+    tslib "^1.10.0"
+
 "@hapi/address@2.x.x":
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.2.tgz#1c794cd6dbf2354d1eb1ef10e0303f573e1c7222"
@@ -1496,6 +1512,16 @@ babel-plugin-module-resolver@3.2.0:
     pkg-up "^2.0.0"
     reselect "^3.0.1"
     resolve "^1.4.0"
+
+babylonjs-gltf2interface@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/babylonjs-gltf2interface/-/babylonjs-gltf2interface-4.1.0.tgz#95ec994e352ac5cb74869e238218a1b4df18e2f4"
+  integrity sha512-H2obg+4t8bcmLyzGiOQqmUaTQqTu+6mJUlsMWZvmRBf0k2fQVeTdAkH7aDy6HVIz/THvpIx4ntG1Lsyquvmc5Q==
+
+babylonjs@^4.0.3:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/babylonjs/-/babylonjs-4.1.0.tgz#a2d1d6765795e9d44f002831554d63d6275394bd"
+  integrity sha512-MnaH1BQIL+PYgqGaAvGVdP8yd7nM1j6sbQi/K/6+RlkHPxIETW2NbjqxiW7Sywgy7r3PwqWT/gxG4Bz95Z6/yA==
 
 balanced-match@^1.0.0:
   version "1.0.0"
@@ -3690,6 +3716,11 @@ fs.realpath@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
 
+fs@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/fs/-/fs-0.0.2.tgz#e1f244ef3933c1b2a64bd4799136060d0f5914f8"
+  integrity sha1-4fJE7zkzwbKmS9R5kTYGDQ9ZFPg=
+
 fsevents@^1.2.7:
   version "1.2.9"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-1.2.9.tgz#3f5ed66583ccd6f400b5a00db6f7e861363e388f"
@@ -4909,9 +4940,9 @@ lodash.uniq@^4.5.0:
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
 lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.3.0:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 log-symbols@^2.2.0:
   version "2.2.0"
@@ -5910,6 +5941,11 @@ path-type@^3.0.0:
   integrity sha512-T2ZUsdZFHgA3u4e5PfPbjd7HDDpxPnQb5jN0SrDsjNSuVXHJqtwTnWqG0B1jZrgmJ/7lj1EmVIByWt1gxGkWvg==
   dependencies:
     pify "^3.0.0"
+
+path@^0.11.14:
+  version "0.11.14"
+  resolved "https://registry.yarnpkg.com/path/-/path-0.11.14.tgz#cbc7569355cb3c83afeb4ace43ecff95231e5a7d"
+  integrity sha1-y8dWk1XLPIOv60rOQ+z/lSMeWn0=
 
 pbkdf2@^3.0.3:
   version "3.0.17"
@@ -7759,6 +7795,11 @@ tryer@^1.0.1:
   resolved "https://registry.yarnpkg.com/tryer/-/tryer-1.0.1.tgz#f2c85406800b9b0f74c9f7465b81eaad241252f8"
   integrity sha512-c3zayb8/kWWpycWYg87P71E1S1ZL6b6IJxfb5fvsUgsf0S2MVGaDhDXXjDMpdCpfWXqptc+4mXwmiy1ypXqRAA==
 
+tslib@^1.10.0:
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.13.0.tgz#c881e13cc7015894ed914862d276436fa9a47043"
+  integrity sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
+
 tslib@^1.9.0:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
@@ -8207,6 +8248,14 @@ webpack-dev-server@^3.4.1:
     webpack-log "^2.0.0"
     ws "^6.2.1"
     yargs "12.0.5"
+
+webpack-glsl-loader@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/webpack-glsl-loader/-/webpack-glsl-loader-1.0.1.tgz#72a0e30192bd57947d60d6d505c915be680d0acc"
+  integrity sha1-cqDjAZK9V5R9YNbVBckVvmgNCsw=
+  dependencies:
+    fs "0.0.2"
+    path "^0.11.14"
 
 webpack-log@^2.0.0:
   version "2.0.0"
