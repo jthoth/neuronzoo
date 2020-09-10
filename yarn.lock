@@ -669,6 +669,22 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@babylonjs/core@4.1.0", "@babylonjs/core@^4.0.3":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@babylonjs/core/-/core-4.1.0.tgz#63e390862debf81f8cf248496187029c42ea5eda"
+  integrity sha512-4pEKPEu14qRdqH5qatfmns/iHFHmujDI22SXkHIlJhTT0WgJH4I8IN1fPw9sU6jSCH2ul76Lpbi2zREvfrEDQA==
+  dependencies:
+    tslib "^1.10.0"
+
+"@babylonjs/loaders@^4.0.3":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@babylonjs/loaders/-/loaders-4.1.0.tgz#1b40f8c07b46228ae4cf6dbda2d0856293f4db80"
+  integrity sha512-stK/QygoNhdrJ9q8yNyZ7iE8Eu+dpwBviSoEigLX5IwHFJUmyxeI0LIZpjRAP2GRB96kqLrBsIBdWEwk076w/g==
+  dependencies:
+    "@babylonjs/core" "4.1.0"
+    babylonjs-gltf2interface "4.1.0"
+    tslib "^1.10.0"
+
 "@hapi/address@2.x.x":
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.2.tgz#1c794cd6dbf2354d1eb1ef10e0303f573e1c7222"
@@ -1496,6 +1512,16 @@ babel-plugin-module-resolver@3.2.0:
     pkg-up "^2.0.0"
     reselect "^3.0.1"
     resolve "^1.4.0"
+
+babylonjs-gltf2interface@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/babylonjs-gltf2interface/-/babylonjs-gltf2interface-4.1.0.tgz#95ec994e352ac5cb74869e238218a1b4df18e2f4"
+  integrity sha512-H2obg+4t8bcmLyzGiOQqmUaTQqTu+6mJUlsMWZvmRBf0k2fQVeTdAkH7aDy6HVIz/THvpIx4ntG1Lsyquvmc5Q==
+
+babylonjs@^4.0.3:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/babylonjs/-/babylonjs-4.1.0.tgz#a2d1d6765795e9d44f002831554d63d6275394bd"
+  integrity sha512-MnaH1BQIL+PYgqGaAvGVdP8yd7nM1j6sbQi/K/6+RlkHPxIETW2NbjqxiW7Sywgy7r3PwqWT/gxG4Bz95Z6/yA==
 
 balanced-match@^1.0.0:
   version "1.0.0"
@@ -2591,7 +2617,7 @@ debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   dependencies:
     ms "2.0.0"
 
-debug@^3.0.0, debug@^3.1.0, debug@^3.2.5, debug@^3.2.6:
+debug@^3.1.0, debug@^3.2.5, debug@^3.2.6:
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
   integrity sha512-mel+jf7nrtEl5Pn1Qx46zARXKDpBbvzezse7p7LqINmdoIk8PYP5SySaxEmYv6TZ0JyEKA1hsCId6DIhgITtWQ==
@@ -3222,9 +3248,9 @@ event-pubsub@4.3.0:
   integrity sha512-z7IyloorXvKbFx9Bpie2+vMJKKx1fH1EN5yiTfp8CiLOTptSYy1g8H4yDpGlEdshL1PBiFtBHepF2cNsqeEeFQ==
 
 eventemitter3@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.0.tgz#d65176163887ee59f386d64c82610b696a4a74eb"
-  integrity sha512-qerSRB0p+UDEssxTtm6EDKcE7W4OaoisfIMl4CngyEhjpYglocpNg6UEqCvemdGhosAsg4sO2dXJOdyBifPGCg==
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
+  integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
 
 events@^3.0.0:
   version "3.0.0"
@@ -3609,11 +3635,9 @@ flush-write-stream@^1.0.0:
     readable-stream "^2.3.6"
 
 follow-redirects@^1.0.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.9.0.tgz#8d5bcdc65b7108fe1508649c79c12d732dcedb4f"
-  integrity sha512-CRcPzsSIbXyVDl0QI01muNDu69S8trU4jArW9LpOt2WtC6LyUJetcIrmfHsRBx7/Jb6GHJUiuqyYxPooFfNt6A==
-  dependencies:
-    debug "^3.0.0"
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
+  integrity sha512-aq6gF1BEKje4a9i9+5jimNFIpq4Q1WiwBToeRK5NvZBd/TRsmW8BsJfOEGkr76TbOyPVD3OVDN910EcUNtRYEA==
 
 for-in@^1.0.2:
   version "1.0.2"
@@ -3689,6 +3713,11 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
+
+fs@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/fs/-/fs-0.0.2.tgz#e1f244ef3933c1b2a64bd4799136060d0f5914f8"
+  integrity sha1-4fJE7zkzwbKmS9R5kTYGDQ9ZFPg=
 
 fsevents@^1.2.7:
   version "1.2.9"
@@ -4114,9 +4143,9 @@ http-proxy-middleware@0.19.1:
     micromatch "^3.1.10"
 
 http-proxy@^1.17.0:
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/http-proxy/-/http-proxy-1.18.0.tgz#dbe55f63e75a347db7f3d99974f2692a314a6a3a"
-  integrity sha512-84I2iJM/n1d4Hdgc6y2+qY5mDaz2PUVjlg9znE9byl+q0uC3DeByqBGReQu5tpLK0TAqTIXScRUV+dg7+bUPpQ==
+  version "1.18.1"
+  resolved "https://registry.yarnpkg.com/http-proxy/-/http-proxy-1.18.1.tgz#401541f0534884bbf95260334e72f88ee3976549"
+  integrity sha512-7mz/721AbnJwIVbnaSv1Cz3Am0ZLT/UBwkC92VlxhXv/k/BBQfM2fXElQNC27BVGr0uwUpplYPQM9LnaBMR5NQ==
   dependencies:
     eventemitter3 "^4.0.0"
     follow-redirects "^1.0.0"
@@ -5910,6 +5939,11 @@ path-type@^3.0.0:
   integrity sha512-T2ZUsdZFHgA3u4e5PfPbjd7HDDpxPnQb5jN0SrDsjNSuVXHJqtwTnWqG0B1jZrgmJ/7lj1EmVIByWt1gxGkWvg==
   dependencies:
     pify "^3.0.0"
+
+path@^0.11.14:
+  version "0.11.14"
+  resolved "https://registry.yarnpkg.com/path/-/path-0.11.14.tgz#cbc7569355cb3c83afeb4ace43ecff95231e5a7d"
+  integrity sha1-y8dWk1XLPIOv60rOQ+z/lSMeWn0=
 
 pbkdf2@^3.0.3:
   version "3.0.17"
@@ -7759,6 +7793,11 @@ tryer@^1.0.1:
   resolved "https://registry.yarnpkg.com/tryer/-/tryer-1.0.1.tgz#f2c85406800b9b0f74c9f7465b81eaad241252f8"
   integrity sha512-c3zayb8/kWWpycWYg87P71E1S1ZL6b6IJxfb5fvsUgsf0S2MVGaDhDXXjDMpdCpfWXqptc+4mXwmiy1ypXqRAA==
 
+tslib@^1.10.0:
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.13.0.tgz#c881e13cc7015894ed914862d276436fa9a47043"
+  integrity sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
+
 tslib@^1.9.0:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
@@ -8207,6 +8246,14 @@ webpack-dev-server@^3.4.1:
     webpack-log "^2.0.0"
     ws "^6.2.1"
     yargs "12.0.5"
+
+webpack-glsl-loader@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/webpack-glsl-loader/-/webpack-glsl-loader-1.0.1.tgz#72a0e30192bd57947d60d6d505c915be680d0acc"
+  integrity sha1-cqDjAZK9V5R9YNbVBckVvmgNCsw=
+  dependencies:
+    fs "0.0.2"
+    path "^0.11.14"
 
 webpack-log@^2.0.0:
   version "2.0.0"
